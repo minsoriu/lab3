@@ -1,11 +1,9 @@
-﻿Console.WriteLine("Введите конечное число:");
+Console.WriteLine("Введите конечное число:");
 int x = Convert.ToInt32(Console.ReadLine());
 double s = 0;
-double f = 1;
-for (int i = 1;  i <= x; i++)
-{
-    f *= i;
-    s += 1 / f;
+double i = 1;
+while (i <= x) {
+    s += 1 / i;
+    i++;
 }
 Console.WriteLine(s);
-
